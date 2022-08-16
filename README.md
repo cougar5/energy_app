@@ -9,8 +9,8 @@
 <li><p><b>Cooling load model = Cmodel</b></p></li>
 <li><p><b>Heating load model = Hmodel</b></p></li>
 </ul>
-<hr>
 
+<hr>
 <h3> Datasets used for model development : </h3>
 <ul>
 <li><p><b>In repository</b> : energy_efficiency_data</p></li>
