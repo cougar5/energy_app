@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy Efficiency Prediction</title>
+</head>
+<body>
+    <form action="/result" method = "POST">
+    <p>Relative Compactness (%) <input type = "number" name = "Relative_Compactness"  min="0" max="100" step="any" required/></p>
+    <p>Surface Area (m²) <input type = "text" name = "Surface_Area" min="0" step="any" required/></p>
+    <p>Wall Area (m²) <input type = "text" name = "Wall_Area" min="0" step="any" required/></p>
+    <p>Roof Area (m²) <input type = "text" name = "Roof_Area" min="0" step="any" required/></p>
+    <p>No. of Storey<br>
+        <input type="radio" id="1st" name="Overall_Height" value=3.5>
+        <label for="1st">1 Storey</label>
+        <input type="radio" id="2st" name="Overall_Height" value=7>
+        <label for="2st">2 Storey</label></p>
+    <p>Orientation<br>
+        <input type="radio" id="east" name="Orientation" value="East">
+        <label for="east">East</label>
+        <input type="radio" id="south" name="Orientation" value="South">
+        <label for="south">South</label><br>
+        <input type="radio" id="west" name="Orientation" value="West">
+        <label for="west">West</label>
+        <input type="radio" id="north" name="Orientation" value="North">
+        <label for="north">North</label></p>
+    <p>Not Glazed 
+        <input type="checkbox" id="nglazed" name="Glazed" value="False">
+        <input type='hidden' id="glazed" name="Glazed" value="True"></p>
+    <p>Glazing Area<br>
+        <input type="radio" id="10" name="Glazing_Area" value=0.1>
+        <label for="10">10%</label>
+        <input type="radio" id="25" name="Glazing_Area" value=0.25>
+        <label for="25">25%</label>
+        <input type="radio" id="40" name="Glazing_Area" value=0.4>
+        <label for="40">40%</label></p>
+    <p>Glazing Direction<br>
+        <input type="radio" id="uniform" name="Glazing_dir" value="Uniform">
+        <label for="uniform">Uniform</label><br>
+        <input type="radio" id="eastward" name="Glazing_dir" value="Eastward">
+        <label for="eastward">Eastward</label>
+        <input type="radio" id="southward" name="Glazing_dir" value="Southward">
+        <label for="southward">Southward</label><br>
+        <input type="radio" id="westward" name="Glazing_dir" value="Westward">
+        <label for="westward">Westward</label>
+        <input type="radio" id="northward" name="Glazing_dir" value="Northward">
+        <label for="northward">Northward</label></p>
+    <p><input type = "submit" value = "Get result" /></p>
+</form>
+</body>
+</html>
